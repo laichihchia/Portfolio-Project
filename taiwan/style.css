@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.headerTittle {
+  font-size: 2.5rem;
+}
+.headerText {
+  font-size: 1rem;
+}
+header {
+  background-color: #c4c4c4;
+  width: 100%;
+  padding: 1rem;
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.795);
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav ul li {
+  display: flex;
+}
+nav ul li a {
+  padding: 0.5rem 0.75rem;
+  color: rgb(206, 201, 201);
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+.indexSection {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section.left,
+section.right {
+  padding: 1.5rem;
+}
+section.right h4 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+.active {
+  color: white;
+}
+section.left {
+  flex: 4 1 550px;
+}
+section.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 250px;
+}
+section.right p {
+  margin: 1rem 0rem;
+}
+.secondText {
+  padding: 0rem 1rem;
+}
+.secondMath {
+  font-size: 1.5rem;
+  text-align: center;
+  color: red;
+}
+.secondList {
+  padding: 0rem 2rem;
+}
+.secondMain {
+  width: 100%;
+  padding: 2rem;
+}
+.thirdMain {
+  width: 100%;
+  padding: 2rem;
+}
+.thirdSection {
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+}
+.forthTittle {
+  width: 100%;
+  padding: 0rem 1rem;
+}
+.fourthMain {
+  width: 100%;
+  padding: 2rem;
+}
+.fourthImg {
+  margin-top: 2rem;
+  width: 100%;
+}
+.fourthA {
+  color: blue;
+  transition: all 0.3s ease;
+}
+.fourthA:hover {
+  background-color: rgb(114, 154, 240);
+  color: aliceblue;
+}
+#curve_chart {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 550px) {
+  #curve_chart {
+    width: 100%;
+    height: 30%;
+  }
+}
+@media screen and (max-width: 650px) {
+  nav ul {
+    flex-direction: column;
+  }
+}

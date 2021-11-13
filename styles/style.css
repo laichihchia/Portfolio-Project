@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  position: relative;
+}
+
+.Lightblue {
+  opacity: 0.5;
+  position: absolute;
+  top: -10vh;
+  right: 0;
+  z-index: -1;
+  width: 55vw;
+  height: 150vh;
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav ul {
+  padding: 1.5rem;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li {
+  font-size: 1.5rem;
+}
+
+header nav ul li a {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: black;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #83a2f8;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.left {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+  padding: 1rem 3rem;
+}
+
+main section.left h1 {
+  font-size: 3rem;
+  color: #83a2f8;
+}
+
+main section.left p {
+  text-indent: 32px;
+  font-size: 1.5rem;
+}
+
+main section.right {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+}
+
+main section.right img {
+  position: absolute;
+  border-radius: 50%;
+  width: 25vw;
+  height: 65vh;
+  right: 15vw;
+  top: 50vh;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+main section.table {
+  padding: 2rem;
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 500px;
+          flex: 3 1 500px;
+}
+
+main section.table table {
+  border-collapse: collapse;
+}
+
+main section.table table tr {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  border-bottom: 1px solid #aaa8a8;
+}
+
+main section.table table tr td {
+  padding: 1.5rem;
+}
+
+main section.table table tr:hover {
+  background-color: #dde6fd;
+}
+
+main section.picture {
+  width: 30vw;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+  position: relative;
+}
+
+main section.picture div.LightblueRect {
+  width: 30vw;
+  height: 80vh;
+  background-color: #bccbf5;
+  position: absolute;
+  top: 30px;
+  left: 70px;
+  z-index: -1;
+}
+
+main section.form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+}
+
+main section.form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 70vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+main section.form form div label {
+  margin-right: 1.5rem;
+  font-size: 1.5rem;
+}
+
+main section.form form div input,
+main section.form form div textarea {
+  background-color: #aabff8;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.15rem;
+  border: none;
+  width: 85%;
+  vertical-align: top;
+}
+
+main section.form form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  background-color: #aabff8;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0rem 2rem;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+main section.form form button:hover {
+  background-color: #9bb6ff;
+}
+
+main section.contact {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+main section.contact div.content h2 {
+  padding: 1rem;
+}
+
+main div.line {
+  background-color: gray;
+  width: 2px;
+}
+
+.active {
+  color: #83a2f8;
+}
+
+@media screen and (max-width: 1100px) {
+  .Lightblue {
+    opacity: 0.35;
+  }
+  header nav ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav ul li {
+    padding: 0.5rem 0rem;
+    border-bottom: 1px solid #dbd6d6;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main section.right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 2rem;
+  }
+  main section.right img {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    width: 40vw;
+    height: 55vw;
+  }
+  main section.picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.picture img {
+    width: 65vw;
+    height: 40vh;
+  }
+  main section.picture div.LightblueRect {
+    display: none;
+  }
+  main div.line {
+    background-color: white;
+    width: 2px;
+  }
+}
+
+footer a {
+  padding: 1rem;
+  opacity: 0.7;
+}
+/*# sourceMappingURL=style.css.map */

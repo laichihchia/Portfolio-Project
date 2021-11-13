@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+body {
+  position: relative;
+}
+.Lightblue {
+  opacity: 0.5;
+  position: absolute;
+  top: -10vh;
+  right: 0;
+  z-index: -1;
+  width: 55vw;
+  height: 150vh;
+}
+header {
+  nav {
+    width: 100%;
+    ul {
+      padding: 1.5rem;
+      width: 70%;
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      li {
+        font-size: 1.5rem;
+        a {
+          transition: all 0.5s ease;
+          color: black;
+          text-decoration: none;
+          &:hover {
+            color: #83a2f8;
+          }
+        }
+      }
+    }
+  }
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  section.left {
+    flex: 3 1 500px;
+    padding: 1rem 3rem;
+    h1 {
+      font-size: 3rem;
+      color: #83a2f8;
+    }
+    p {
+      text-indent: 32px;
+      font-size: 1.5rem;
+    }
+  }
+  section.right {
+    position: relative;
+    flex: 1 1 600px;
+    img {
+      position: absolute;
+      border-radius: 50%;
+      width: 25vw;
+      height: 65vh;
+      right: 15vw;
+      top: 50vh;
+      transform: translateY(-50%);
+    }
+  }
+  section.table {
+    padding: 2rem;
+    flex: 3 1 500px;
+    table {
+      border-collapse: collapse;
+      tr {
+        transition: all 0.2s ease-in;
+        border-bottom: 1px solid rgb(170, 168, 168);
+        td {
+          padding: 1.5rem;
+        }
+        &:hover {
+          background-color: #dde6fd;
+        }
+      }
+    }
+  }
+  section.picture {
+    width: 30vw;
+    flex: 1 1 600px;
+    position: relative;
+    div.LightblueRect {
+      width: 30vw;
+      height: 80vh;
+      background-color: #bccbf5;
+      position: absolute;
+      top: 30px;
+      left: 70px;
+      z-index: -1;
+    }
+  }
+  section.form {
+    flex: 1 1 600px;
+    form {
+      display: flex;
+      flex-direction: column;
+      min-height: 70vh;
+      justify-content: space-around;
+      margin: 0.5rem;
+      padding: 1rem;
+      div {
+        label {
+          margin-right: 1.5rem;
+          font-size: 1.5rem;
+        }
+        input,
+        textarea {
+          background-color: #aabff8;
+          color: white;
+          font-size: 1.2rem;
+          padding: 0.15rem;
+
+          border: none;
+          width: 85%;
+          vertical-align: top;
+        }
+      }
+      button {
+        align-self: center;
+        border: none;
+        background-color: #aabff8;
+        color: white;
+        cursor: pointer;
+        font-size: 1.2rem;
+        padding: 0rem 2rem;
+        border-radius: 5px;
+        margin-top: 0.5rem;
+        &:hover {
+          background-color: #9bb6ff;
+        }
+      }
+    }
+  }
+  section.contact {
+    flex: 1 1 500px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    div.content {
+      h2 {
+        padding: 1rem;
+      }
+    }
+  }
+  div.line {
+    background-color: gray;
+    width: 2px;
+  }
+}
+.active {
+  color: #83a2f8;
+}
+
+@media screen and (max-width: 1100px) {
+  .Lightblue {
+    opacity: 0.35;
+  }
+  header {
+    nav {
+      ul {
+        width: 100%;
+        flex-direction: column;
+        li {
+          padding: 0.5rem 0rem;
+          border-bottom: 1px solid rgb(219, 214, 214);
+        }
+      }
+    }
+  }
+  main {
+    display: flex;
+
+    section.right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem;
+      img {
+        position: static;
+        transform: none;
+        width: 40vw;
+        height: 55vw;
+      }
+    }
+    section.picture {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 65vw;
+        height: 40vh;
+      }
+      div.LightblueRect {
+        display: none;
+      }
+    }
+    div.line {
+      background-color: rgb(255, 255, 255);
+      width: 2px;
+    }
+  }
+}
+footer {
+  a {
+    padding: 1rem;
+    opacity: 0.7;
+  }
+}
